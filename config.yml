@@ -1,0 +1,5 @@
+example_project:
+  model: es_core_news_lg
+  data_path: data/example
+  out_path: output
+  spacy_config: spacy_config/config_es_lg.cfg

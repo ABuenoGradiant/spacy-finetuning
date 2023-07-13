@@ -3,3 +3,4 @@ example_project:
   data_path: data/example
   out_path: output
   spacy_config: spacy_config/config_es_lg.cfg
+  ml_experiment: REBOLD-NER

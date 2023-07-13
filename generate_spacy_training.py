@@ -73,6 +73,8 @@ if __name__ == '__main__':
                 "python3 -m spacy evaluate {} {} > {}".format(
                     os.path.join(out_path,"model-best"), paths["test"],os.path.join(out_path,"evaluation.txt")
                 ))
+                bash_out.write("\n")
+                bash_out.write("python3 {} {}".format(os.path.join(CURRENT_PATH,"to_ml_flow.py"),training_name))
             
             print("Done! please run: \nbash {}\n to train the model.".format(os.path.join(out_path,"run_train.sh")))
         else: 

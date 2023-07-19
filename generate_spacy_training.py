@@ -57,6 +57,7 @@ if __name__ == '__main__':
                 if file in ["train.json","dev.json","test.json"]:
                     name=file.replace(".json","")
                     json_out=read_jsonl(os.path.join(data_path,file))
+                    print(file)
                     spacy_db=spacy_parser.to_spacy_format(json_out)
                     spacy_file="{}.spacy".format(name)
                     spacy_db.to_disk(os.path.join(out_path,"{}.spacy".format(name))) 

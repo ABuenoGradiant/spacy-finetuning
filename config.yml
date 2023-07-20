@@ -5,9 +5,16 @@ example_project:
   spacy_config: spacy_config/config_es_lg.cfg
   ml_experiment: REBOLD-NER
 
-brands:
+brands_es:
   model: es_core_news_lg
   data_path: data/brands_19072023
   out_path: output
   spacy_config: spacy_config/config_es_lg.cfg
+  ml_experiment: REBOLD-NER
+
+brands_xx:
+  model: xx_ent_wiki_sm
+  data_path: data/brands_19072023
+  out_path: output
+  spacy_config: spacy_config/config_xx_sm.cfg
   ml_experiment: REBOLD-NER

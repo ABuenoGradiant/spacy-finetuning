@@ -30,6 +30,21 @@ def read_jsonl(file_path:str):
         
         return  out
 
+def read_json(file_path:str):
+    with open(file_path,"r") as json_in:
+        return json.load(json_in)
+    
+def save_jsonl(file_path:str,data:list):
+    with open(file_path,"w+") as out_json:
+        for line in data:
+            json.dump(line,out_json,ensure_ascii=False)
+            out_json.write("\n")
+
+def save_json(file_path:str,data:dict):
+    with open(file_path,"w+") as out_json:
+        json.dump(data,out_json,ensure_ascii=False)
+
+
 def get_info_entities(data:list):
     out={}
     for entry in data:
